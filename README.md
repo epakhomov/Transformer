@@ -8,29 +8,15 @@ that benefits from pretraining on Wikipedia text.
 
 Key Components
 
-┌──────────────────┬─────────────────────────────────────────────────┐
-│       File       │                     Purpose                     │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/model.py     │ GPT architecture (embeddings, transformer       │
-│                  │ blocks, output head)                            │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/attention.py │ Causal self-attention and cross-attention       │
-│                  │ mechanisms                                      │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/dataset.py   │ Span corruption pretraining dataset +           │
-│                  │ name→birthplace finetuning dataset              │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/trainer.py   │ Training loop with LR scheduling,               │
-│                  │ checkpointing                                   │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/helper.py    │ Model initialization, pretrain/finetune         │
-│                  │ orchestration                                   │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/utils.py     │ Seed setting, autoregressive sampling,          │
-│                  │ birthplace prediction evaluation                │
-├──────────────────┼─────────────────────────────────────────────────┤
-│ src/run.py       │ CLI entry point                                 │
-└──────────────────┴─────────────────────────────────────────────────┘
+| File | Purpose |
+| --- | --- |
+| src/model.py | GPT architecture (embeddings, transformer blocks, output head) |
+| src/attention.py | Causal self-attention and cross-attention mechanisms |
+| src/dataset.py | Span corruption pretraining dataset + name→birthplace finetuning dataset |
+| src/trainer.py | Training loop with LR scheduling, checkpointing |
+| src/helper.py | Model initialization, pretrain/finetune orchestration |
+| src/utils.py | Seed setting, autoregressive sampling, birthplace prediction evaluation |
+| src/run.py | CLI entry point |
 
 Implemention plan:
 

@@ -1,3 +1,16 @@
+This project was completed around two years ago. Some cactch-up work:
+
+* RoPE
+* RMSNorm + Pre-Norm
+* Multi-Query Attention
+* SwiGLU / GeGLU activations instead of ReLU
+* FlashAttention
+* Bigger context length
+* KV Caching & PagedAttention
+* MoE (DeepSeek-style routing) or hybrid Mamba layer
+
+
+
 This is a Stanford XCS224N project where I was tasked to build a GPT-style
 Transformer from scratch to explore pretraining and transfer learning.
 
